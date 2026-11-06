@@ -1,67 +1,71 @@
-# Hi, I'm Rakesh Kumar 👋
+# Rakesh Kumar
 
-### AWS Cloud & DevOps Engineer | Cloud Infrastructure | CI/CD Automation
+### Junior DevOps Engineer | AWS · Jenkins · Docker · Kubernetes · Terraform
 
-I'm an aspiring Cloud and DevOps Engineer focused on AWS, Linux, CI/CD automation, containerisation, Kubernetes and Infrastructure as Code. I enjoy building practical projects to strengthen my understanding of cloud infrastructure, deployment automation and application operations.
+DevOps engineer with about a year of hands-on experience running client applications on AWS EC2, plus end-to-end projects built during AWS & DevOps training. Based in Bengaluru, available to join immediately.
 
-## 🛠️ Technical Skills
+## Technical Skills
 
-- **Cloud:** AWS EC2, S3, VPC, IAM, RDS, CloudWatch
-- **DevOps & CI/CD:** Jenkins, Maven, CI/CD pipelines
-- **Containers & Orchestration:** Docker, Kubernetes, K3s
-- **Infrastructure as Code:** Terraform
-- **Version Control:** Git, GitHub
-- **Operating Systems & Scripting:** Linux, Bash, Python
-- **Web & Databases:** HTML, CSS, Java, Go, Redis, MySQL
+| Area | Tools |
+|---|---|
+| Cloud | AWS (EC2, S3, VPC, IAM, RDS, CloudWatch) |
+| CI/CD | Jenkins, Maven, Git, GitHub |
+| Containers | Docker, Kubernetes (K3s) |
+| Infrastructure as Code | Terraform |
+| Monitoring | CloudWatch, Grafana |
+| OS & Scripting | Linux (Ubuntu), Bash, Python |
 
-## 🚀 Featured Projects
+## Work Experience
 
-### 1. Jenkins + Maven + Tomcat
-A Java web application packaged as a WAR file using Maven, with a focus on learning Jenkins-based build and deployment workflows.
+**Cloud & DevOps Support, Remedo (Jan 2025 – May 2026)**
+- Deployed and maintained client applications on Linux-based AWS EC2 servers
+- Containerised applications with Docker and supported Kubernetes workloads
+- Ran Jenkins CI/CD pipelines for application deployments
+- Monitored servers using CloudWatch and Grafana
 
-[View Repository](https://github.com/rakesh-cloudops/jenkins-maven-tomcat-demo)
+## Projects
 
-### 2. Jenkins CI/CD Website
-A responsive website built with HTML, CSS and JavaScript around a DevOps-themed interface.
+### 1. End-to-End CI/CD Pipeline: Jenkins + Docker + K3s on AWS EC2
+A Jenkins pipeline that tests a Java 21 app with Maven, builds a Docker image, pushes it to Docker Hub and deploys it to a 3-node K3s cluster on AWS EC2.
 
-[View Repository](https://github.com/rakesh-cloudops/jenkins-cicd-website)
+```mermaid
+flowchart LR
+    A[GitHub] --> B[Jenkins]
+    B --> C[Maven tests]
+    C --> D[Docker build]
+    D --> E[Docker Hub]
+    E --> F[K3s cluster on AWS EC2]
+```
 
-### 3. Jenkins Pipeline Practice
-A beginner project for practising Jenkins pipeline fundamentals and GitHub source-code integration.
+- 3-node K3s cluster (1 master, 2 workers) inside a VPC
+- 2 replicas with readiness/liveness probes, resource limits and non-root user
+- Credentials stored in Jenkins Credentials, nothing hardcoded
 
-[View Repository](https://github.com/rakesh-cloudops/jenkins-pipeline-demo)
+[View Repository](https://github.com/rakesh-cloudops/ci-cd-jenkins-k3s-project)
 
-### 4. Go Guestbook with Redis and Kubernetes
-A practical project exploring a Go application, Redis components, Docker and Kubernetes manifests.
-
-[View Repository](https://github.com/rakesh-cloudops/guestbook-go-practice)
-
-### 5. AWS Infrastructure with Terraform
-A hands-on Infrastructure as Code project for defining AWS EC2 infrastructure and security group rules.
+### 2. Infrastructure as Code: Terraform on AWS
+EC2 instance and security group (SSH and HTTP rules) provisioned in ap-south-1 using Terraform (init, validate, plan, apply, destroy).
 
 [View Repository](https://github.com/rakesh-cloudops/terraform-practical)
 
-## 🎯 Current Learning Goals
+### 3. Multi-Tier App on Kubernetes (Go + Redis)
+A Go guestbook app with a Redis master-replica backend, deployed with separate Kubernetes manifests per tier and exposed through a LoadBalancer Service.
 
-- Improving Jenkins pipeline automation
-- Building and deploying containerised applications
-- Practising Kubernetes deployments and services
-- Managing AWS infrastructure using Terraform
-- Strengthening cloud security and monitoring fundamentals
+[View Repository](https://github.com/rakesh-cloudops/guestbook-go-practice)
 
-## 📜 Certifications & Training
+### 4. Java Web App: Maven + Apache Tomcat
+A JSP application packaged as a WAR file with Maven and deployed on Apache Tomcat, set up for a Jenkins build-and-deploy workflow.
 
-- AWS Cloud & DevOps Training — Trishana Technologies, Bangalore
-- AWS Certified Cloud Practitioner — In Progress
-- Google Digital Marketing — Fundamentals & Analytics Certified
-- HubSpot Content Marketing Certified
+[View Repository](https://github.com/rakesh-cloudops/jenkins-maven-tomcat-demo)
 
-## 📫 Connect With Me
+### Other Repositories
+- [Jenkins Pipeline Demo](https://github.com/rakesh-cloudops/jenkins-pipeline-demo): Jenkins pipeline basics with GitHub integration
+- [Jenkins CI/CD Website](https://github.com/rakesh-cloudops/jenkins-cicd-website): DevOps-themed static website (HTML, CSS, JavaScript)
 
-- **GitHub:** [rakesh-cloudops](https://github.com/rakesh-cloudops)
+## Certifications & Training
+- AWS Cloud & DevOps Training, Trishana Technologies, Bangalore
+- AWS Certified Cloud Practitioner (in progress)
 
-I'm continuously learning and building hands-on projects in cloud computing and DevOps. Feedback and suggestions are welcome!
-
----
-
-*This portfolio showcases my learning journey and practical projects. Project details and implementation status are documented in their respective repositories.*
+## Contact
+- LinkedIn: [linkedin.com/in/rakesh-kumar-b67b7919b](https://www.linkedin.com/in/rakesh-kumar-b67b7919b)
+- Email: rakeshrkt4399@gmail.com
